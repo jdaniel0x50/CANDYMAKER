@@ -10,14 +10,24 @@ Offers the ability to toggle usage of the following front-end packages/framework
  Offers ability to modify database name, password, and name of first application (Model and Controller names)
 
 ### Usage
-Install: ```npm install -g generator-candymaker```
+Download and Save to a location on your drive outside of a Git repository
 
-Run ```yo candymaker```, optionally passing an app name
+From the command line, navigate inside the folder containing the project (same level as the package.json file)
+
+Type command > `npm link`
+
+Navigate to the folder you would like to launch your first project
+
+Type command > `yo candymaker`, optionally passing an app name
 ```
 yo candymaker [app=name]
 ```
 
 Once installed navigate into newly created folder and run ```dotnet restore```
+
+If using a PostGres database run migrations:
+dotnet ef migrations add FirstMigration
+dotnet ef database update
 
 ### License
 

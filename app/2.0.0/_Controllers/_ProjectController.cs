@@ -28,7 +28,7 @@ namespace <%= namespace %>.Controllers
         // Entity PostGres Code First connection
         private <%= projname %>Context _context;
 
-        public HomeController(<%= projname %>Context context)
+        public <%= first_app %>Controller(<%= projname %>Context context)
         {
             // Dapper framework connections
             // _dbConnector = connect;

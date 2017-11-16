@@ -23,7 +23,7 @@ namespace <%= namespace %>
             // Dapper Factory connection
             services.AddScoped<DbConnector>();
             // services.AddDbContext<>(MySqlOptions => MySqlOptions.UseNpgsql(Configuration["PostGresInfo:ConnectionString"]));
-            services.AddDbContext<<%= namespace %>Context>(options => options.UseNpgsql(Configuration["PostGresInfo:ConnectionString"]));
+            services.AddDbContext<<%= projname %>Context>(options => options.UseNpgsql(Configuration["PostGresInfo:ConnectionString"]));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

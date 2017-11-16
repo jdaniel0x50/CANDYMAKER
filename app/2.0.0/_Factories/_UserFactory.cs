@@ -26,19 +26,5 @@ namespace <%= namespace %>.Factory
             }
         }
 
-        public void Add(UserRegViewModel NewUser)
-        {
-            using (IDbConnection dbConnection = Connection)
-            {
-
-            }
-        }
-        public IEnumerable<User> FindAll()
-        {
-            using (IDbConnection dbConnection = Connection)
-            {
-
-            }
-        }
     }
 }
