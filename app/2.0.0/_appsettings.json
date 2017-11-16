@@ -1,0 +1,13 @@
+{
+    "DBInfo": 
+    {
+        "Name": "MySQLconnect",
+        "ConnectionString": "server=localhost;userid=root;password=<%= password %>;port=3306;database=<%= database_name %>;SslMode=None"
+    },
+    "PostGresInfo":
+    {
+        "Name": "PostGresConnect",
+        // PostGres doesn't use the "SslMode" property, make sure to remove it or the connection will be refused
+        "ConnectionString": "server=localhost;userId=postgres;password=<%= password %>;port=5432;database=<%= database_name %>;"
+    }
+}
